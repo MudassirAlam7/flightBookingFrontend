@@ -3,7 +3,7 @@ import { MdFlightTakeoff } from "react-icons/md";
 import { RiFlightLandLine } from "react-icons/ri";
 import { SlCalender } from "react-icons/sl";
 import { BsFillPersonFill } from "react-icons/bs";
-import "./Search.css";
+import "./search.css";
 
 const Search = () => {
   return (
