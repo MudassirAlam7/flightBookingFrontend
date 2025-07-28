@@ -1,0 +1,92 @@
+.supportContainer {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Title styles */
+.sectionContainer .tittlesDiv {
+  text-align: center;
+}
+
+.tittlesDiv small {
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+.tittlesDiv h2 {
+  margin: 0.8rem 0;
+  font-size: 25px;
+}
+
+/* Info section layout */
+.infoDiv {
+  margin-top: 3rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Left text column */
+.textDiv {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 280px;
+}
+
+/* Individual info block */
+.singleInfo {
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+/* Number styling */
+.number {
+  background-color: #1e90ff;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-weight: 700;
+  border-radius: 999px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+/* Image on the right */
+.imgDiv {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+.imgDiv img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Responsive: Stack image below text on small screens */
+@media (max-width: 768px) {
+  .infoDiv {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .imgDiv {
+    margin-top: 1.5rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .imgDiv img {
+    max-width: 100%;
+  }
+} 

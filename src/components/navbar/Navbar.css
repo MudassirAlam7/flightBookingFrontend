@@ -1,0 +1,116 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: transparent;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+.nav-grey{
+  background-color: #f9f9f9;
+}
+
+.logoDiv {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.logoDiv h1 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+  color : black;
+}
+.logoText {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.logoDiv span {
+  font-size: 12px;
+  color: #cccccc;
+  font-style: italic;
+  margin-left: 4px;
+  margin-top: 2px;
+}
+
+/* Navbar Menu */
+.navbarMenu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  font-weight: 600;
+  align-items: center;
+  list-style: none;
+}
+
+/* List Items */
+.listitem {
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-size: 16px;
+}
+
+.listitem:hover {
+  color: #00d2ff;
+}
+
+/* Contact Button */
+.btns {
+  background-color: #1e90ff;
+  color: white;
+  padding: 8px 16px;
+  margin-left: 100px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btns:hover {
+  background-color: #ffffff;
+  color: #0a0a0a;
+  border: #1e90ff;
+}
+
+/* Toggle icon (hamburger) */
+.toggleIcon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Responsive updates */
+@media screen and (max-width: 768px) {
+  .toggleIcon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .navbarMenu {
+    display: none;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    width: 100%;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .navbarMenu.showMenu {
+    display: flex;
+  }
+}
