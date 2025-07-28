@@ -7,7 +7,7 @@ import Search from './components/search/Search'
 import Support from './components/support/Support'
 import Info from './components/info/Info'
 import Traveller from './components/traveller/Traveller'
-import Footer from './components/footer/footer'
+import Footer from './components/footer/Footer'
 
 const App = () => {
   return (
